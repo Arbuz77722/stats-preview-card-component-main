@@ -1,0 +1,46 @@
+@media (max-width: 69em) {
+  .container {
+    max-width: 80rem;
+    margin: 2rem;
+  }
+  .stats-content {
+    padding: 3.5rem 6.5rem 3rem 3.5rem;
+  }
+}
+@media (max-width: 47em) {
+  html {
+    font-size: 50%;
+  }
+  body {
+    height: 100svh;
+  }
+  .container {
+    margin: 2rem;
+  }
+  .grid-2-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-content {
+    text-align: center;
+  }
+
+  .stats-title {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  .stats-img {
+    grid-row: 1;
+  }
+  .stats-text {
+    margin-bottom: 2rem;
+  }
+  .img {
+    background-image: url(images/image-header-mobile.jpg);
+  }
+
+  .stats-figures {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

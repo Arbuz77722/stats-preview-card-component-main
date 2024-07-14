@@ -1,0 +1,139 @@
+:root {
+  /* Colors */
+  /* Primary */
+
+  --primary-very-dark-blue-mb: hsl(233, 47%, 7%);
+  --primary-dark-desaturated-blue-cb: hsl(244, 38%, 16%);
+  --primary-soft-violet: hsl(277, 64%, 61%);
+
+  /* Neutral */
+
+  --neutral-main-heading-stats: hsl(0, 0%, 100%);
+  --neutral-paragraph: hsla(0, 0%, 100%, 0.75);
+  --neutral-stats-heading: hsla(0, 0%, 100%, 0.6);
+
+  /* Typography */
+
+  --ff-inter: "Inter", sans-serif;
+  --ff-ld: "Lexend Deca", sans-serif;
+  --fs-p: 15px;
+  --fw-inter-normal: 400;
+  --fw-ld-normal: 400;
+  --fw-inter-bold: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  height: 100svh;
+  background-color: var(--primary-very-dark-blue-mb);
+  font-family: var(--ff-inter);
+  font-size: var(--fs-p);
+  color: var(--neutral-paragraph);
+}
+
+.grid-2-cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.container {
+  max-width: 110rem;
+  margin: 0 auto;
+}
+.stats {
+  border-radius: 11px;
+  overflow: hidden;
+}
+
+.stats-content {
+  background-color: var(--primary-dark-desaturated-blue-cb);
+  padding: 7rem 13rem 6rem 7rem;
+}
+
+.stats-title {
+  font-size: 3rem;
+  color: var(--neutral-main-heading-stats);
+  font-weight: var(--fw-inter-bold);
+  margin-bottom: 3rem;
+}
+
+.stats-title span {
+  color: var(--primary-soft-violet);
+}
+.stats-text {
+  margin-bottom: 7rem;
+}
+
+.stats-figures {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stats-figures span {
+  font-size: 2rem;
+  font-weight: var(--fw-inter-bold);
+  color: var(--neutral-main-heading-stats);
+}
+
+.stats-queries span {
+  text-transform: uppercase;
+}
+
+.stats-figures p {
+  font-family: var(--ff-ld);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--neutral-stats-heading);
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+.stats-img {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(279, 100%, 26%, 0.5);
+}
